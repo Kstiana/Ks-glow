@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KSGlow Skincare - Skin, Reimagined</title>
+<meta name="description" content="Luxury skincare born from nature and refined by science. Experience the KSGlow ritual.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Parisienne&family=Sacramento&family=Tangerine:wght@400;700&family=Cinzel:wght@400..900&family=Abril+Fatface&family=Prata&family=Yeseva+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar"></div>
+
+<header class="header">
+  <div class="header-content">
+    <a href="#" class="logo serif">KS<span class="glow">GLOW</span></a>
+    <nav class="nav-desktop">
+      <a href="#ingredients">Ingredients</a>
+      <a href="#science">Science</a>
+      <a href="#story">Story</a>
+      <a href="#impact">Impact</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="aurora-bg">
+    <div class="aurora-layer"></div>
+    <div class="aurora-layer"></div>
+    <div class="aurora-layer"></div>
+  </div>
+  
+  <canvas class="sparkle-canvas" id="sparkleCanvas"></canvas>
+  
+  <svg class="hero-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="blobGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#f5c6cb;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#fce4e8;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#c9a690;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <path id="blobPath" fill="url(#blobGradient)"></path>
+  </svg>
+  
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-headline serif">Skin, reimagined.</h1>
+      <p class="hero-subtext">Where nature's wisdom meets precision science. Discover skincare that breathes with your skin's natural rhythm.</p>
+      <a href="#ingredients" class="hero-cta">Discover the ritual</a>
+    </div>
+    
+    <div class="product-card" id="productCard">
+      <div class="product-card-inner">
+        <div class="product-image">
+          <i class="fas fa-spa"></i>
+        </div>
+        <div class="product-info">
+          <h2 class="product-name serif">Radiance Serum</h2>
+          <p class="product-tagline">Pure. Potent. Transformative.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ingredients">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title serif">From farm to formula</h2>
+      <p class="section-subtitle">Every ingredient traced, every source verified. Transparency you can trust.</p>
+    </div>
+    
+    <div class="ingredient-timeline">
+      <div class="ingredient-card">
+        <div class="ingredient-image">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <h3 class="ingredient-name serif">Rose Hip Extract</h3>
+        <p class="ingredient-origin"><i class="fas fa-map-marker-alt"></i> Organic farms, Chile</p>
+        <span class="ingredient-benefit">Vitamin C boost</span>
+      </div>
+      
+      <div class="ingredient-card">
+        <div class="ingredient-image">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <h3 class="ingredient-name serif">Hyaluronic Acid</h3>
+        <p class="ingredient-origin"><i class="fas fa-flask"></i> Bio-fermented, Japan</p>
+        <span class="ingredient-benefit">Deep hydration</span>
+      </div>
+      
+      <div class="ingredient-card">
+        <div class="ingredient-image">
+          <i class="fas fa-mortar-pestle"></i>
+        </div>
+        <h3 class="ingredient-name serif">Niacinamide</h3>
+        <p class="ingredient-origin"><i class="fas fa-microscope"></i> Clinical grade, Switzerland</p>
+        <span class="ingredient-benefit">Barrier repair</span>
+      </div>
+      
+      <div class="ingredient-card">
+        <div class="ingredient-image">
+          <i class="fas fa-spa"></i>
+        </div>
+        <h3 class="ingredient-name serif">Ceramide Complex</h3>
+        <p class="ingredient-origin"><i class="fas fa-dna"></i> Bioidentical, Germany</p>
+        <span class="ingredient-benefit">Skin defense</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="science" style="background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title serif">Science you can feel</h2>
+      <p class="section-subtitle">Advanced delivery systems that work in harmony with your skin's natural processes.</p>
+    </div>
+    
+    <div class="science-grid">
+      <div class="science-card">
+        <i class="fas fa-atom science-icon"></i>
+        <h3 class="serif">Nano-Encapsulation</h3>
+        <p>Active ingredients protected and delivered precisely where your skin needs them most, maintaining potency until absorption.</p>
+      </div>
+      
+      <div class="science-card">
+        <i class="fas fa-shield-alt science-icon"></i>
+        <h3 class="serif">Dermatologist Tested</h3>
+        <p>Clinically proven formulations tested across diverse skin types. Hypoallergenic and non-comedogenic certification.</p>
+      </div>
+      
+      <div class="science-card">
+        <i class="fas fa-heart science-icon"></i>
+        <h3 class="serif">Cruelty Free</h3>
+        <p>Never tested on animals. Certified vegan formulations that honor both skin and conscience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="story">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title serif">Crafted with intention</h2>
+      <p class="section-subtitle">Born from a simple belief: skincare should nourish, not compromise.</p>
+    </div>
+    
+    <div class="science-grid">
+      <div class="science-card">
+        <i class="fas fa-lightbulb science-icon"></i>
+        <h3 class="serif">Purpose</h3>
+        <p>To create formulations that respect skin's intelligence, supporting its natural renewal without disruption.</p>
+      </div>
+      
+      <div class="science-card">
+        <i class="fas fa-hands-helping science-icon"></i>
+        <h3 class="serif">Craft</h3>
+        <p>Small-batch production ensures every bottle receives the attention it deserves, from sourcing to final seal.</p>
+      </div>
+      
+      <div class="science-card">
+        <i class="fas fa-users science-icon"></i>
+        <h3 class="serif">Community</h3>
+        <p>Building relationships with ethical suppliers, supporting local communities, and sharing knowledge openly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="impact" style="background: var(--cream-dark);">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title serif">Impact that matters</h2>
+      <p class="section-subtitle">Every purchase contributes to a more sustainable future.</p>
+    </div>
+    
+    <div class="counters-grid">
+      <div class="counter-card">
+        <span class="counter-number" data-target="15420">0</span>
+        <p class="counter-label">Bottles Recycled</p>
+      </div>
+      
+      <div class="counter-card">
+        <span class="counter-number" data-target="8750">0</span>
+        <p class="counter-label">Liters Water Saved</p>
+      </div>
+      
+      <div class="counter-card">
+        <span class="counter-number" data-target="127">0</span>
+        <p class="counter-label">Community Grants</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="countdown-container">
+      <h2 class="countdown-title serif">Limited Edition Launch</h2>
+      
+      <div class="countdown-timer">
+        <div class="countdown-segment">
+          <div class="countdown-value" id="days">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-segment">
+          <div class="countdown-value" id="hours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-segment">
+          <div class="countdown-value" id="minutes">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-segment">
+          <div class="countdown-value" id="seconds">00</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+      
+      <div class="stock-bar">
+        <div class="stock-fill" id="stockFill" style="width: 67%;"></div>
+      </div>
+      <p class="stock-label">Only <strong>33%</strong> remaining</p>
+      
+      <a href="#" class="hero-cta" style="margin-top: 2rem;">Secure yours now</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--cream-dark);">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title serif">The ritual, visualized</h2>
+      <p class="section-subtitle">Moments of transformation, captured.</p>
+    </div>
+    
+    <div class="gallery-container">
+      <div class="gallery-slide active" style="background: linear-gradient(135deg, rgba(245, 198, 203, 0.3), rgba(252, 228, 232, 0.5)), linear-gradient(to bottom, transparent 50%, rgba(250,248,245,0.9) 100%);">
+        <div class="gallery-caption">
+          <h3 class="serif">Morning Glow</h3>
+          <p>Begin your day with a moment of intention. Three drops, pressed gently into awakened skin.</p>
+        </div>
+      </div>
+      
+      <div class="gallery-slide" style="background: linear-gradient(135deg, rgba(201, 166, 144, 0.3), rgba(212, 165, 165, 0.4)), linear-gradient(to bottom, transparent 50%, rgba(250,248,245,0.9) 100%);">
+        <div class="gallery-caption">
+          <h3 class="serif">Texture Meets Skin</h3>
+          <p>Watch as the serum transforms, melting into skin's surface with whisper-light absorption.</p>
+        </div>
+      </div>
+      
+      <div class="gallery-slide" style="background: linear-gradient(135deg, rgba(252, 228, 232, 0.4), rgba(245, 198, 203, 0.3)), linear-gradient(to bottom, transparent 50%, rgba(250,248,245,0.9) 100%);">
+        <div class="gallery-caption">
+          <h3 class="serif">Evening Renewal</h3>
+          <p>As day surrenders to night, let your skin drink deeply. Tomorrow's glow begins tonight.</p>
+        </div>
+      </div>
+      
+      <div class="gallery-nav">
+        <button class="gallery-btn" id="galleryPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="gallery-btn" id="galleryNext"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title serif">Questions answered</h2>
+      <p class="section-subtitle">Everything you need to know about your new ritual.</p>
+    </div>
+    
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How do I incorporate this into my existing routine?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Apply after cleansing and toning, before moisturizer. Three drops morning and evening. Pat gently until absorbed. Allow 60 seconds before applying next product.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Is this suitable for sensitive skin?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Our formulation is dermatologist-tested, hypoallergenic, and free from common irritants. We recommend patch-testing for 24 hours before full application.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>When will I see results?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Many users notice improved hydration within days. Visible improvements in texture and tone typically emerge within 2-3 weeks of consistent use.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What's your shipping and return policy?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Free shipping on orders over $50. Delivery within 3-5 business days. 30-day satisfaction guarantee—if it doesn't work for your skin, return for a full refund.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Are your products cruelty-free and vegan?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. We're certified cruelty-free and never test on animals. All our formulations are 100% vegan with no animal-derived ingredients.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="outro">
+  <div class="aurora-bg">
+    <div class="aurora-layer"></div>
+    <div class="aurora-layer"></div>
+    <div class="aurora-layer"></div>
+  </div>
+  
+  <div class="outro-content">
+    <h2 class="outro-title serif">Glow awaits.</h2>
+    <p class="outro-text">Your skin's transformation begins with a single drop. Join thousands who've discovered the KSGlow difference.</p>
+    <a href="#" class="outro-cta">Begin your ritual</a>
+    
+    <div class="social-proof">
+      <p class="testimonial">"This serum changed everything. My skin has never felt more alive."</p>
+      <p class="testimonial-author">— Kristy, Verified Customer</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <nav class="footer-nav">
+      <a href="#story">About</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#science">Science</a>
+      <a href="#impact">Sustainability</a>
+      <a href="#">Contact</a>
+      <a href="#">Press</a>
+    </nav>
+    
+    <div class="social-links">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+    </div>
+    
+    <p class="footer-copyright">&copy; 2025 KSGlow Skincare. Crafted with intention.</p>
+  </div>
+</footer>
+
+<nav class="nav-mobile">
+  <a href="#ingredients">
+    <i class="fas fa-leaf"></i>
+    <span>Ingredients</span>
+  </a>
+  <a href="#science">
+    <i class="fas fa-flask"></i>
+    <span>Science</span>
+  </a>
+  <a href="#story">
+  <i class="fas fa-info-circle"></i>
+  <span>Story</span>
+</a>
+  <a href="#impact">
+    <i class="fas fa-heart"></i>
+    <span>Impact</span>
+  </a>
+  <a href="#faq">
+    <i class="fas fa-question-circle"></i>
+    <span>FAQ</span>
+  </a>
+</nav>
+<script src="script.js"></script>
+</body>
+</html>
