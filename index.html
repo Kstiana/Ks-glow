@@ -5,6 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KSGlow Skincare - Skin, Reimagined</title>
 <meta name="description" content="Luxury skincare born from nature and refined by science. Experience the KSGlow ritual.">
+<link rel="canonical" href="https://www.ksglow.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="KSGlow Skincare — Skin, Reimagined">
+<meta property="og:description" content="Luxury skincare born from nature and refined by science. Experience the KSGlow ritual.">
+<meta property="og:image" content="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<meta property="og:url" content="https://www.ksglow.com/">
+<meta property="og:site_name" content="KSGlow Skincare">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KSGlow Skincare — Skin, Reimagined">
+<meta name="twitter:description" content="Luxury skincare born from nature and refined by science.">
+<meta name="twitter:image" content="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ff4d8d'/%3E%3Cstop offset='100%25' stop-color='%23ffb347'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='45' fill='url(%23g)'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "KSGlow Radiance Serum",
+  "description": "Luxury skincare serum with Rose Hip Extract, Hyaluronic Acid, Niacinamide, and Ceramide Complex.",
+  "brand": { "@type": "Brand", "name": "KSGlow" },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1240"
+  }
+}
+</script>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +48,12 @@
 
 <header class="header">
   <div class="header-content">
-    <a href="#" class="logo serif">KS<span class="glow">GLOW</span></a>
+    <a href="#home" class="logo serif">KS<span class="glow">GLOW</span></a>
     <nav class="nav-desktop">
       <a href="#ingredients">Ingredients</a>
       <a href="#science">Science</a>
       <a href="#story">Story</a>
-      <a href="#impact">Impact</a>
+      <a href="#reviews">Reviews</a>
       <a href="#faq">FAQ</a>
     </nav>
   </div>
@@ -52,7 +83,18 @@
     <div class="hero-text">
       <h1 class="hero-headline serif">Skin, reimagined.</h1>
       <p class="hero-subtext">Where nature's wisdom meets precision science. Discover skincare that breathes with your skin's natural rhythm.</p>
-      <a href="#ingredients" class="hero-cta">Discover the ritual</a>
+
+      <div class="hero-rating">
+        <span class="hero-rating-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+        <span class="hero-rating-text">4.9 from 1,240 rituals</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#ingredients" class="hero-cta">Discover the ritual</a>
+        <button id="quizOpenBtn" class="hero-cta-secondary"><i class="fas fa-sparkles"></i> Find your ritual</button>
+      </div>
+
+      <div class="trust-badges" id="trustBadges"></div>
     </div>
     
     <div class="product-card" id="productCard">
@@ -78,7 +120,7 @@
     
     <div class="ingredient-timeline">
       <div class="ingredient-card">
-        <div class="ingredient-image">
+        <div class="ingredient-image" style="background-image: url('https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=600');">
           <i class="fas fa-leaf"></i>
         </div>
         <h3 class="ingredient-name serif">Rose Hip Extract</h3>
@@ -87,7 +129,7 @@
       </div>
       
       <div class="ingredient-card">
-        <div class="ingredient-image">
+        <div class="ingredient-image" style="background-image: url('https://images.pexels.com/photos/785695/pexels-photo-785695.jpeg?auto=compress&cs=tinysrgb&w=600');">
           <i class="fas fa-seedling"></i>
         </div>
         <h3 class="ingredient-name serif">Hyaluronic Acid</h3>
@@ -96,7 +138,7 @@
       </div>
       
       <div class="ingredient-card">
-        <div class="ingredient-image">
+        <div class="ingredient-image" style="background-image: url('https://images.pexels.com/photos/13608713/pexels-photo-13608713.jpeg?auto=compress&cs=tinysrgb&w=600');">
           <i class="fas fa-mortar-pestle"></i>
         </div>
         <h3 class="ingredient-name serif">Niacinamide</h3>
@@ -105,7 +147,7 @@
       </div>
       
       <div class="ingredient-card">
-        <div class="ingredient-image">
+        <div class="ingredient-image" style="background-image: url('https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&w=600');">
           <i class="fas fa-spa"></i>
         </div>
         <h3 class="ingredient-name serif">Ceramide Complex</h3>
@@ -113,6 +155,17 @@
         <span class="ingredient-benefit">Skin defense</span>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section how-it-works-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title serif">How it works</h2>
+      <p class="section-subtitle">Three simple steps, twice a day.</p>
+    </div>
+
+    <div class="how-it-works-grid" id="howItWorksGrid"></div>
   </div>
 </section>
 
@@ -200,7 +253,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="waitlist">
   <div class="container">
     <div class="countdown-container">
       <h2 class="countdown-title serif">Limited Edition Launch</h2>
@@ -228,8 +281,37 @@
         <div class="stock-fill" id="stockFill" style="width: 67%;"></div>
       </div>
       <p class="stock-label">Only <strong>33%</strong> remaining</p>
-      
-      <a href="#" class="hero-cta" style="margin-top: 2rem;">Secure yours now</a>
+
+      <form class="waitlist-form" id="waitlistForm">
+        <label for="waitlistEmail" class="waitlist-label">Join the waitlist to secure yours</label>
+        <div class="waitlist-input-row">
+          <input type="email" id="waitlistEmail" class="waitlist-input" placeholder="you@email.com" autocomplete="email" required>
+          <button type="submit" class="hero-cta" id="waitlistSubmit">Notify me</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="transformation">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title serif">From petal to potion</h2>
+      <p class="section-subtitle">Drag to see the journey from raw botanical to refined serum.</p>
+    </div>
+
+    <div class="before-after-container">
+      <div class="before-after-slider" id="beforeAfterSlider">
+        <img src="https://images.pexels.com/photos/4041231/pexels-photo-4041231.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Raw rose petals and botanical bottle" class="before-after-base">
+        <div class="before-after-reveal" id="beforeAfterReveal">
+          <img src="https://images.pexels.com/photos/31552021/pexels-photo-31552021.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Refined finished serum flat lay">
+        </div>
+        <div class="before-after-handle" id="beforeAfterHandle">
+          <i class="fas fa-arrows-alt-h"></i>
+        </div>
+        <span class="before-after-label label-left">Raw Botanical</span>
+        <span class="before-after-label label-right">Refined Serum</span>
+      </div>
     </div>
   </div>
 </section>
@@ -241,22 +323,22 @@
       <p class="section-subtitle">Moments of transformation, captured.</p>
     </div>
     
-    <div class="gallery-container">
-      <div class="gallery-slide active" style="background: linear-gradient(135deg, rgba(245, 198, 203, 0.3), rgba(252, 228, 232, 0.5)), linear-gradient(to bottom, transparent 50%, rgba(250,248,245,0.9) 100%);">
+    <div class="gallery-container" role="region" aria-label="Ritual gallery" aria-live="polite" tabindex="0">
+      <div class="gallery-slide active" style="background: linear-gradient(135deg, rgba(245, 198, 203, 0.3), rgba(252, 228, 232, 0.5)), linear-gradient(to bottom, transparent 50%, rgba(250,248,245,0.9) 100%), url('https://images.pexels.com/photos/4041389/pexels-photo-4041389.jpeg?auto=compress&cs=tinysrgb&w=1200'); background-size: cover; background-position: center;">
         <div class="gallery-caption">
           <h3 class="serif">Morning Glow</h3>
           <p>Begin your day with a moment of intention. Three drops, pressed gently into awakened skin.</p>
         </div>
       </div>
       
-      <div class="gallery-slide" style="background: linear-gradient(135deg, rgba(201, 166, 144, 0.3), rgba(212, 165, 165, 0.4)), linear-gradient(to bottom, transparent 50%, rgba(250,248,245,0.9) 100%);">
+      <div class="gallery-slide" style="background: linear-gradient(135deg, rgba(201, 166, 144, 0.3), rgba(212, 165, 165, 0.4)), linear-gradient(to bottom, transparent 50%, rgba(250,248,245,0.9) 100%), url('https://images.pexels.com/photos/7479561/pexels-photo-7479561.jpeg?auto=compress&cs=tinysrgb&w=1200'); background-size: cover; background-position: center;">
         <div class="gallery-caption">
           <h3 class="serif">Texture Meets Skin</h3>
           <p>Watch as the serum transforms, melting into skin's surface with whisper-light absorption.</p>
         </div>
       </div>
       
-      <div class="gallery-slide" style="background: linear-gradient(135deg, rgba(252, 228, 232, 0.4), rgba(245, 198, 203, 0.3)), linear-gradient(to bottom, transparent 50%, rgba(250,248,245,0.9) 100%);">
+      <div class="gallery-slide" style="background: linear-gradient(135deg, rgba(252, 228, 232, 0.4), rgba(245, 198, 203, 0.3)), linear-gradient(to bottom, transparent 50%, rgba(250,248,245,0.9) 100%), url('https://images.pexels.com/photos/7795891/pexels-photo-7795891.jpeg?auto=compress&cs=tinysrgb&w=1200'); background-size: cover; background-position: center;">
         <div class="gallery-caption">
           <h3 class="serif">Evening Renewal</h3>
           <p>As day surrenders to night, let your skin drink deeply. Tomorrow's glow begins tonight.</p>
@@ -267,6 +349,20 @@
         <button class="gallery-btn" id="galleryPrev"><i class="fas fa-chevron-left"></i></button>
         <button class="gallery-btn" id="galleryNext"><i class="fas fa-chevron-right"></i></button>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title serif">Loved, repeatedly</h2>
+      <p class="section-subtitle">Real words from real rituals.</p>
+    </div>
+
+    <div class="testimonial-carousel" id="testimonialCarousel">
+      <div class="testimonial-track" id="testimonialTrack"></div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
     </div>
   </div>
 </section>
@@ -342,7 +438,7 @@
   <div class="outro-content">
     <h2 class="outro-title serif">Glow awaits.</h2>
     <p class="outro-text">Your skin's transformation begins with a single drop. Join thousands who've discovered the KSGlow difference.</p>
-    <a href="#" class="outro-cta">Begin your ritual</a>
+    <a href="#waitlist" class="outro-cta">Begin your ritual</a>
     
     <div class="social-proof">
       <p class="testimonial">"This serum changed everything. My skin has never felt more alive."</p>
@@ -395,6 +491,41 @@
     <span>FAQ</span>
   </a>
 </nav>
-<script src="script.js"></script>
+
+<div class="quiz-modal" id="quizModal">
+  <div class="quiz-modal-content">
+    <button class="quiz-close" id="quizCloseBtn" aria-label="Close quiz">&times;</button>
+    <div class="quiz-progress">
+      <div class="quiz-progress-track"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+      <span class="quiz-progress-label" id="quizProgressLabel">Question 1</span>
+    </div>
+    <div class="quiz-body" id="quizBody"></div>
+  </div>
+</div>
+
+<div class="sticky-mobile-cta" id="stickyMobileCTA">
+  <div class="sticky-mobile-cta-info">
+    <strong>Radiance Serum</strong>
+    <span>$68.00</span>
+  </div>
+  <a href="#waitlist" class="hero-cta sticky-mobile-cta-btn">Shop now</a>
+</div>
+
+<button class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="data.js"></script>
+<script src="utils.js"></script>
+<script src="hero.js"></script>
+<script src="scroll-effects.js"></script>
+<script src="countdown.js"></script>
+<script src="gallery.js"></script>
+<script src="faq.js"></script>
+<script src="testimonials.js"></script>
+<script src="before-after.js"></script>
+<script src="quiz.js"></script>
+<script src="waitlist.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
