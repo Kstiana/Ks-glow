@@ -9,17 +9,21 @@ function initCountdown() {
   const STORAGE_KEY = 'ksglow_launch_target';
   let targetTime = storageGet(STORAGE_KEY, null);
 
-  if (!targetTime) {
+  if (!targetTime || targetTime <= Date.now()) {
     targetTime = Date.now() + 7 * 24 * 60 * 60 * 1000;
     storageSet(STORAGE_KEY, targetTime);
   }
 
+  let countdownInterval;
+
   function setSegment(el, value) {
     const formatted = String(value).padStart(2, '0');
+
     if (el.textContent !== formatted) {
       el.classList.add('flip');
       setTimeout(() => el.classList.remove('flip'), 600);
     }
+
     el.textContent = formatted;
   }
 
@@ -28,10 +32,12 @@ function initCountdown() {
 
     if (distance <= 0) {
       clearInterval(countdownInterval);
+
       daysEl.textContent = '00';
       hoursEl.textContent = '00';
       minutesEl.textContent = '00';
       secondsEl.textContent = '00';
+
       return;
     }
 
@@ -47,5 +53,5 @@ function initCountdown() {
   }
 
   updateCountdown();
-  const countdownInterval = setInterval(updateCountdown, 1000);
+  countdownInterval = setInterval(updateCountdown, 1000);
 }
